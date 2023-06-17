@@ -50,6 +50,16 @@ body {
     margin-bottom: 15px;
 }
 
+.columns_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    flex-basis: 50%;
+}
+
+
 @media screen and (max-width: 576px) {
 
     .main-info,
@@ -67,6 +77,14 @@ body {
 
     .experiences {
         margin-right: 0;
+    }
+
+    .columns_container {
+        flex-direction: column;
+    }
+
+    .column {
+        flex-basis: 100%;
     }
 }
 
@@ -93,10 +111,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-basis: 33.3%;
 }
 
 .contact-info__block--center {
     justify-content: center;
+    align-items: center
 }
 
 .contact-info__item {
@@ -225,6 +245,12 @@ body {
     padding-left: 20px;
 }
 
+.experiences__company-project-link {
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .additional-info {
     flex: 1 1 40%;
 }
@@ -236,6 +262,10 @@ body {
 .additional-info__education-header {
     color: var(--secondary-text-color);
     text-align: left;
+    margin-bottom: 20px;
+}
+
+.additional-info__education-university {
     margin-bottom: 20px;
 }
 
