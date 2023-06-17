@@ -50,6 +50,15 @@ body {
     margin-bottom: 15px;
 }
 
+.columns_container {
+    display: flex;
+}
+
+.column {
+    flex-basis: 50%;
+}
+
+
 @media screen and (max-width: 576px) {
 
     .main-info,
@@ -93,10 +102,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-basis: 33.3%;
 }
 
 .contact-info__block--center {
     justify-content: center;
+    align-items: center
 }
 
 .contact-info__item {
@@ -236,6 +247,10 @@ body {
 .additional-info__education-header {
     color: var(--secondary-text-color);
     text-align: left;
+    margin-bottom: 20px;
+}
+
+.additional-info__education-university {
     margin-bottom: 20px;
 }
 
