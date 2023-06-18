@@ -126,6 +126,11 @@ body {
     justify-content: start;
 }
 
+.contact-info__item:hover,
+:focus {
+    color: var(--text-decoration-color);
+}
+
 .contact-info__item:not(:last-child) {
     margin-bottom: 20px;
 }
@@ -138,7 +143,7 @@ body {
 }
 
 .contact-info__item-icon path {
-    fill: var(--icon-color);
+    fill: currentColor;
 }
 
 .contact-info__item-icon {
@@ -249,6 +254,11 @@ body {
     color: inherit;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.experiences__company-project-link:hover,
+:focus {
+    color: var(--text-decoration-color);
 }
 
 .additional-info {
